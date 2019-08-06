@@ -1,6 +1,5 @@
-# kscout README
-
-This is the README for your extension "kscout". After writing up a brief description, we recommend including the following sections.
+# kscout-ide-extension
+A VSCode extension for Kscout platform
 
 ## Features
 
@@ -46,4 +45,5 @@ Fixed issue #.
 ### 1.1.0
 
 Added features X, Y, and Z.
+
 
