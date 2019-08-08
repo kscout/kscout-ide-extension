@@ -10,15 +10,38 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"onCommand:extension.nsearch",
+		"onCommand:extension.tagSearch",
+		"onCommand:extension.learn",
+		"onCommand:extension.deploy"		
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
+
 			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
+				"command": "extension.nsearch",
+				"title": "Search",
+				"category": "Kscout"
+
+			},
+			{
+				"command": "extension.tagSearch",
+				"title": "Tag Search",
+				"category": "Kscout"
+			},
+			{
+				"command": "extension.learn",
+				"title": "Learn",
+				"category": "Kscout"
+			},
+			{
+				"command": "extension.deploy",
+				"title": "Deploy",
+				"category": "Kscout"
+
 			}
+
 		]
 	},
 	"scripts": {

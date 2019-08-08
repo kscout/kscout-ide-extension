@@ -3,13 +3,15 @@ A VSCode extension for Kscout platform
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Kscout is a VSCode IDE extension which integrates serverless apps marketplace to your IDE. You can search, deploy and learn about serverless apps using this extension.
 
-For example if there is an image subfolder under your extension project workspace:
+### General Commands
 
-\!\[feature X\]\(images/feature-x.png\)
+- `Kscout: Search` : Search apps on Kscout platform using natural language query
+- `Kscout: Tag Search`: Search apps on Kscout platform using tag name
+- `Kscout:Learn`: Ask anything serverless to the Kscout Virtual Assistant
+- `Kscout: Deploy`: Deploy searched apps on the clusters
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
 ## Requirements
 
@@ -36,14 +38,16 @@ Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
-Initial release of ...
+Initial release of Kscout: Integration of kscout.io
 
-### 1.0.1
+## Run
 
-Fixed issue #.
+To run the unpublished extension locally follow the steps below:
 
-### 1.1.0
-
-Added features X, Y, and Z.
+- Ensure you have nodejs and git installed
+- Run ``` bash npm install -g yo generator-code ```
+- Run the generator and fill out the information ``` yo code```
+- Go to the editor and press `F5` to run <b>Extension Developement Host Window</b>
+- Run commands in Command Palette(`Ctrl+Shift+P`) in the new window
 
 
