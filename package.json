@@ -10,20 +10,19 @@
 		"Other"
 	],
 	"activationEvents": [
+		"*:extension.session",
 		"onCommand:extension.nsearch",
 		"onCommand:extension.tagSearch",
 		"onCommand:extension.learn",
-		"onCommand:extension.deploy"		
+		"onCommand:extension.deploy"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
-
 			{
 				"command": "extension.nsearch",
 				"title": "Search",
 				"category": "Kscout"
-
 			},
 			{
 				"command": "extension.tagSearch",
@@ -39,9 +38,7 @@
 				"command": "extension.deploy",
 				"title": "Deploy",
 				"category": "Kscout"
-
 			}
-
 		]
 	},
 	"scripts": {
@@ -55,11 +52,15 @@
 		"@types/glob": "^7.1.1",
 		"@types/mocha": "^5.2.6",
 		"@types/node": "^10.12.21",
+		"@types/node-fetch": "^2.5.0",
 		"@types/vscode": "^1.36.0",
 		"glob": "^7.1.4",
 		"mocha": "^6.1.4",
-		"typescript": "^3.3.1",
 		"tslint": "^5.12.1",
+		"typescript": "^3.3.1",
 		"vscode-test": "^1.0.2"
+	},
+	"dependencies": {
+		"node-fetch": "^2.6.0"
 	}
 }

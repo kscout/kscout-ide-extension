@@ -45,9 +45,7 @@ Initial release of Kscout: Integration of kscout.io
 To run the unpublished extension locally follow the steps below:
 
 - Ensure you have nodejs and git installed
-- Run ``` bash npm install -g yo generator-code ```
-- Run the generator and fill out the information ``` yo code```
 - Go to the editor and press `F5` to run <b>Extension Developement Host Window</b>
-- Run commands in Command Palette(`Ctrl+Shift+P`) in the new window
+- Run commands starting with `Kscout` in Command Palette(`Ctrl+Shift+P`) in the new window
 
 
