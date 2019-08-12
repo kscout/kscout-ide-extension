@@ -1,5 +1,6 @@
 import * as vscode from 'vscode';
 import * as req from '../util/requests';
+import open = require("open");
 
 export const message = (sessionID : Promise <any>, response : string) => {
 
@@ -20,11 +21,11 @@ export const message = (sessionID : Promise <any>, response : string) => {
                 return;
             }
             else if(selection === 'Github'){
-          console.log(app['github_url']);
+                open(app['github_url']);
 
             }
             else {
-            console.log(app['homepage_url']);
+            open(app['homepage_url']);
 
         }
   });
@@ -55,7 +56,6 @@ export const message = (sessionID : Promise <any>, response : string) => {
             }
     // search query with only text
      else{
-         console.log(message_content["text"]);
          vscode.window.showInformationMessage(message_content["text"]);
         return;
          }
