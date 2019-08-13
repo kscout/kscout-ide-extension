@@ -4,34 +4,30 @@ import * as msg from '../util/messagetype';
 
 export class Search{
     static async searchByQuery(sessionId : Promise<any>) {
-        let result : string|undefined  = "init";
+        let result : string|undefined  = "Tell me about the app you want to search";
         req.sendMessage(sessionId, "I want to search");
 
         while(result !== undefined){
-        let result = await vscode.window.showInputBox({
-            placeHolder: 'What type of app do you want to search? Press Esc to exit',
+           result = await vscode.window.showInputBox({
+            placeHolder: result + ' Press Esc to exit',
         });
-        
-        req.sendMessage(sessionId,result).then(resp => 
-            msg.message(sessionId, resp) 
-           );
+        result = await req.createComponents(sessionId,result);
 
     }
-    vscode.window.showInformationMessage("Thanks");
+  
     } 
 
     static async searchByTags(sessionId: Promise<any>) {
-        let result : string|undefined  = "init";
+        let result : string|undefined  = "Enter tag names";
+        req.sendMessage(sessionId, "I want to search");
         while(result !== undefined){
         let result = await vscode.window.showInputBox({
             placeHolder: 'Enter @tagName. Press Esc to exit',
         });
 
-        // Call chatbot api
-        let api_call = `Got: ${result}`;
-        vscode.window.showInformationMessage(api_call);
+        result = await req.createComponents(sessionId,result);
+
     } 
-    vscode.window.showInformationMessage("Thanks");
 
 }
 
