@@ -77,7 +77,6 @@ export const createComponents = async(sessionID : Promise<any>, result :string |
    );
 };
 
-
 const runTerminal = async(command : string)=>{
     const term = vscode.window.createTerminal ( 'Terminal' );
 
