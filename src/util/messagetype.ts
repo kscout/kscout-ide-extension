@@ -24,7 +24,7 @@ export const message = (sessionID : Promise <any>, message_content : any) => {
 
             }
             else if(selection === 'Home Page') {
-            open(app['homepage_url']);
+            open(app['site_url']);
 
         }
   });
