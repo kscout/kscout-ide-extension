@@ -61,7 +61,7 @@
 		"vscode-test": "^1.0.2"
 	},
 	"dependencies": {
-		"node-fetch": "^2.6.0",
+		"node-fetch": "^2.6.7",
 		"open": "^6.4.0"
 	}
 }
